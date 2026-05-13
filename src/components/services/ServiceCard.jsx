@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import {
   RiMapPin2Line, RiHome4Line, RiKey2Line,
   RiBuilding2Line, RiToolsLine, RiHammerLine,
-  RiShieldCheckLine, RiEyeLine, RiWrenchLine, RiDraftLine,
+  RiShieldCheckLine, RiEyeLine, RiWrench2Line, RiDraftLine,
   RiArrowRightLine,
 } from "react-icons/ri";
 
 const ICON_MAP = {
   RiMapPin2Line, RiHome4Line, RiKey2Line,
   RiBuilding2Line, RiToolsLine, RiHammerLine,
-  RiShieldCheckLine, RiEyeLine, RiWrenchLine, RiDraftLine,
+  RiShieldCheckLine, RiEyeLine, RiWrench2Line, RiDraftLine,
 };
 
 export default function ServiceCard({ service, index }) {
