@@ -45,7 +45,7 @@ export default function Login() {
       >
         {/* Logo */}
         <div className="text-center mb-8">
-          <span className="font-display text-2xl font-bold text-white">Arowosegbe</span>
+          <span className="font-display text-2xl font-bold text-white">Maxprofit</span>
           <br />
           <span className="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-orange">
             & Co. Properties

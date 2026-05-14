@@ -12,7 +12,7 @@ const TESTIMONIALS = [
   {
     name: "Tunde Adeyemi",
     role: "Property Buyer, Lagos",
-    text: "Working with Arowosegbe & Co was the smoothest property experience I've had. Found my plot within two weeks and the documentation was handled perfectly.",
+    text: "Working with Maxprofit was the smoothest property experience I've had. Found my plot within two weeks and the documentation was handled perfectly.",
     rating: 5,
   },
   {

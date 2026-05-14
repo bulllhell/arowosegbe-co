@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex flex-col leading-none mb-4">
               <span className="font-display text-2xl font-bold text-white">
-                Arowosegbe
+                Maxprofit
               </span>
               <span className="text-[10px] font-body font-medium tracking-[0.18em] text-brand-orange uppercase">
                 & Co. Properties
@@ -162,7 +162,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-max px-5 md:px-10 lg:px-20 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/40">
-            © {year} Arowosegbe & Co. Properties. All rights reserved.
+            © {year} Maxprofit Properties. All rights reserved.
           </p>
           <p className="text-xs text-white/30">
             Built with care for a professional you can trust.

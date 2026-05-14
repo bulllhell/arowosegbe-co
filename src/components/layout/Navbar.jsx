@@ -46,7 +46,7 @@ export default function Navbar() {
             {/* ── Logo ── */}
             <Link to="/" className="flex flex-col leading-none group">
               <span className="font-display text-xl font-bold text-brand-charcoal group-hover:text-brand-orange transition-colors duration-200">
-                Arowosegbe
+                Maxprofit
               </span>
               <span className="text-[10px] font-body font-medium tracking-[0.18em] text-brand-orange uppercase">
                 & Co. Properties

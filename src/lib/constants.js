@@ -162,7 +162,7 @@ export const REQUEST_STATUSES = [
 
 // ─── Agent contact info ───────────────────────────────────────────────────────
 export const AGENT = {
-  name:      "Arowosegbe & Co.",
+  name:      "Maxprofit",
   phone:     "+234 813 904 3515",
   whatsapp:  "2348139043515",
   email:     "arowosegbetosin22@gmail.com",

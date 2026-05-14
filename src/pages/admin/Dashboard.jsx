@@ -73,7 +73,7 @@ export default function Dashboard() {
           {/* Logo */}
           <div className="flex flex-col leading-none">
             <span className="font-display text-base font-bold text-brand-charcoal">
-              Arowosegbe
+              Maxprofit
             </span>
             <span className="text-[9px] font-medium tracking-[0.18em] text-brand-orange uppercase">
               & Co. Admin
