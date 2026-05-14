@@ -51,7 +51,7 @@ export const SERVICES = [
     shortDesc: "Skilled tradesmen coordinated and supervised for you.",
     fullDesc:
       "Need plumbers, electricians, tilers, or painters? I source, vet, and manage the right people for your job.",
-    icon: "RiHammerLine",
+    icon: "RiBuildingLine",
     category: "build",
   },
   {
@@ -78,7 +78,7 @@ export const SERVICES = [
     shortDesc: "Routine upkeep and repairs handled promptly.",
     fullDesc:
       "Scheduled or on-demand maintenance for residential and commercial properties. Small issues fixed before they become big problems.",
-    icon: "RiWrenchLine",
+    icon: "RiSettings3Line",
     category: "management",
   },
   {
@@ -163,9 +163,9 @@ export const REQUEST_STATUSES = [
 // ─── Agent contact info ───────────────────────────────────────────────────────
 export const AGENT = {
   name:      "Arowosegbe & Co.",
-  phone:     "+234 800 000 0000",
-  whatsapp:  "2348000000000",
-  email:     "hello@arowosegbe.com",
+  phone:     "+234 813 904 3515",
+  whatsapp:  "2348139043515",
+  email:     "arowosegbetosin22@gmail.com",
   location:  "Lagos, Nigeria",
   tagline:   "Property Made Personal.",
   responseTime: "24 hours",
