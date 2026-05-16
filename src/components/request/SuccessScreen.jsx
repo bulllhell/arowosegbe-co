@@ -55,7 +55,7 @@ export default function SuccessScreen({ formData }) {
         <div className="space-y-2">
           {[
             ["Service",  formData?.service_type],
-            ["Location", formData?.location],
+            ["Location", formData?.city ? `${formData.city}, ${formData.state}` : formData?.state],
             ["Budget",   formData?.budget_range],
             ["Timeline", formData?.timeline],
           ].map(([label, value]) =>

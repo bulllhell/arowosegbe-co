@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   RiFileTextLine,
   RiSearchEyeLine,
-
+  RiPhoneLine,
 } from "react-icons/ri";
 
 const STEPS = [
@@ -19,7 +19,12 @@ const STEPS = [
     title: "I Review & Reach Out",
     desc: "Within 24 hours, I personally review your request and contact you to discuss options and next steps.",
   },
-
+  {
+    icon: RiPhoneLine,
+    number: "03",
+    title: "We Work Together",
+    desc: "Whether it's finding a property, planning a build, or managing your site — I handle it so you don't have to.",
+  },
 ];
 
 export default function HowItWorks() {
@@ -57,8 +62,10 @@ export default function HowItWorks() {
 
         {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-          {/* Connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-1/3 right-1/3 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent" />
+
+          {/* Connector lines (desktop only) */}
+          <div className="hidden md:block absolute top-10 left-[33%] w-[17%] h-px bg-gradient-to-r from-brand-orange/30 to-transparent pointer-events-none" />
+          <div className="hidden md:block absolute top-10 right-[33%] w-[17%] h-px bg-gradient-to-l from-brand-orange/30 to-transparent pointer-events-none" />
 
           {STEPS.map((step, i) => (
             <motion.div
@@ -74,7 +81,7 @@ export default function HowItWorks() {
                 <div className="w-20 h-20 rounded-full bg-brand-orange/15 border border-brand-orange/25 flex items-center justify-center">
                   <step.icon size={28} className="text-brand-orange" />
                 </div>
-                {/* Step number */}
+                {/* Step number badge */}
                 <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-brand-orange flex items-center justify-center text-[10px] font-bold text-white">
                   {step.number}
                 </span>

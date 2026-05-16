@@ -11,19 +11,21 @@ import { isEmpty, isValidPhone, isValidEmail } from "@/lib/utils";
 
 // ─── Initial form state ───────────────────────────────────────────────────────
 const INITIAL = {
-  service_type:  "",
-  sub_details:   "",
-  budget_range:  "",
-  location:      "",
-  purpose:       "",
-  timeline:      "",
-  full_name:     "",
-  phone:         "",
-  email:         "",
-  whatsapp:      "",
-  property_size: "",
-  project_type:  "",
-  frequency:     "",
+  service_type:     "",
+  sub_details:      "",
+  budget_range:     "",
+  state:            "",
+  city:             "",
+  purpose:          "",
+  timeline:         "",
+  full_name:        "",
+  phone:            "",
+  email:            "",
+  whatsapp:         "",
+  property_size:    "",
+  project_type:     "",
+  frequency:        "",
+  property_address: "",
 };
 
 // ─── Per-step validation ──────────────────────────────────────────────────────
@@ -36,8 +38,10 @@ function validate(step, formData) {
   }
 
   if (step === 2) {
-    if (isEmpty(formData.location))
-      errors.location = "Please provide a location.";
+    if (isEmpty(formData.state))
+      errors.state = "Please select a state.";
+    if (isEmpty(formData.city))
+      errors.city = "Please enter a city or area.";
     if (isEmpty(formData.sub_details))
       errors.sub_details = "Please describe what you need.";
   }
@@ -72,13 +76,15 @@ async function submitRequest(formData) {
     service_type: formData.service_type,
     sub_details:  formData.sub_details,
     budget_range: formData.budget_range,
-    location:     formData.location,
-    purpose:      formData.purpose     || null,
+    location:     `${formData.city}, ${formData.state}`,
+    state:        formData.state,
+    city:         formData.city,
+    purpose:      formData.purpose          || null,
     timeline:     formData.timeline,
     full_name:    formData.full_name,
     phone:        formData.phone,
-    email:        formData.email       || null,
-    whatsapp:     formData.whatsapp    || null,
+    email:        formData.email            || null,
+    whatsapp:     formData.whatsapp         || null,
     status:       "new",
   };
 
